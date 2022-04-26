@@ -21,7 +21,7 @@ router.post('/', [
     res.render('Desktop05');
   }
   else{
-    var ct=db.get('Blogs');
+    var ct=db.get('Blogs1');
     ct.find({$and:[{Dormitory:req.body.Dormitory}, {Room:req.body.Room},
       {Appointment_request:req.body.Appointment_request}]}).then((doc1) => {
      if(doc1.length == 0 ){
