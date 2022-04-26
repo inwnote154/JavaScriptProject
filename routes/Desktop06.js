@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const db = require('monk')(process.env.DATABASE_URL || 'localhost:27017/registerDB')
+require('dotenv').config()
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
