@@ -75,7 +75,10 @@ body {
 /* ------------------------------------------ */
 
   .container{
-
+    width: 65em;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 3em;
   }
   
   .Topic{
@@ -87,7 +90,11 @@ body {
   }
 
   .Topic ul li{
-    
+    color: #F2EFEA;
+    text-align: center;
+    border-left: 1px solid #F2EFEA;
+    padding: 1em;
+    width: 10em;
   }
 
   .DataofTopic{
@@ -103,7 +110,9 @@ body {
 
   .DataofTopic ul li{
     text-align: center;
-    padding: 2em;
+    
+    padding: 1em;
+    width: 10em;
   }
 
   .c1{
@@ -112,32 +121,4 @@ body {
 
   .c2{
     background-color: #F2EFEA;
-  }
-
-  #b1{
-
-  }
-
-  #b2{
-
-  }
-
-  #b3{
-
-  }
-
-  #b4{
-
-  }
-
-  #b5{
-
-  }
-
-  #b6{
-
-  }
-
-  #b7{
-
   }
