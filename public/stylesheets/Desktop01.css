@@ -1,0 +1,20 @@
+body {
+    font-family: 'Taviraj', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Desktop01 {
+    background-color: #4097AA;
+    
+}
+.container01{
+    margin: 0;
+    border: 1px solid #4097AA;
+}
+.icon01 {
+    margin: 23% auto 22%;
+    display: block;
+    width: 3.5%;
+    height: auto;
+}

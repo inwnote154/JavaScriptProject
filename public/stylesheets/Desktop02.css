@@ -1,0 +1,130 @@
+body {
+    font-family: 'Taviraj', serif;
+}
+
+.Desktop01 {
+    background-color: #4097AA;
+    margin-top: 23%;
+}
+
+.icon01 {
+    margin: 10px auto 20px;
+    display: block;
+    width: 3.5%;
+    height: auto;
+}
+
+.Desktop02 {
+    background-color: #F2EFEA;
+}
+
+.icon02 {
+    width: 18%;
+    height: auto;
+    cursor: pointer;
+    margin: 7px;
+    margin-top: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* a{
+    text-decoration: none;
+}
+
+* li{
+    list-style: none;
+}
+
+.container01{
+    position: relative;
+    min-height: 0vh;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    height: 9vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4097AA;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    padding: 0 20px;
+}
+
+.menu ul li a{
+    color: #F2EFEA;
+    font-size: 15px;
+}
+
+/* --------------------------------------------- */
+
+.container02{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+}
+.container03{
+    display: flex;
+    text-align: center;
+    margin-top: 1%;
+}
+.a01{
+    font-size: 40px;
+}
+.box1{
+    width: 100vw;
+    min-height: 50px;
+    margin-left: 15vw;
+    margin-right: 0.5vw;
+}
+.box2{
+    width: 70vw;
+    min-height: 50px;
+    background-color: #B0CED2;
+    margin-right: 15vw;
+    margin-left: 0.5vw;
+    
+}
+.box3{
+    width: 70vw;
+    min-height: 50px;
+    background-color: #B0CED2;
+    margin-left: 15vw;
+    margin-right: 0.5vw;
+}
+.box4{
+    width: 100vw;
+    min-height: 50px;
+    margin-right: 15vw;
+    margin-left: 0.5vw;
+}
+
+/*-------------------------------------------*/
+
+.picture01{
+    width: 638px;
+    height: 376px;
+    display: block;    
+}
+
+.picture02{
+    width: 359px;
+    height: 376px;
+    display: block;
+}
+
+/*-------------------------------------------*/
