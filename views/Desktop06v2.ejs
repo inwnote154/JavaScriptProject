@@ -22,28 +22,21 @@
     <br><br><br>
     <center><B><div class = "title"><span>เช็คห้องว่าง</span></div></b></center>
     <br><br>
-    <div id  = "container">
-        <div id ="header">
-            <div>
-                <button id = "backButton" ><img src = "images/back.png" width="10px" height="10px"> </button>
-                <button id = "nextButton" ><img src = "images/next.png" width="10px" height="10px"> </button>
-            </div>
-            <div id ="monthDisplay"></div>
-        </div>
-
-        <div id = "weekdays">
-            <div>อาทิตย์</div>
-            <div>จันทร์</div>
-            <div>อังคาร</div>
-            <div>พุทธ</div>
-            <div>พฤหัสบดี</div>
-            <div>ศุกร์</div> 
-            <div>เสาร์</div>
-        </div>
-        
-        <div id = "calendar"></div>
-    </div>
-    <script src ="/javascripts/Desktop06.js"></script>
+    <center>
+        <% if(data.length == 0){ %>
+            <h1>ไม่พบข้อมูล</h1>  
+          <% } %>
+        <% for (var i = 0; i < data.length; i++) { %>
+            ชื่อผู้จอง : <%= data[i].UName%>
+            หอพัก : <%= data[i].Dormitory %>
+            ห้อง : <%= data[i].Room %>
+            วันที่ : <%= data[i].Appointment_request %>
+            เวลาเริ่ม : <%= data[i].TimeStart %>
+            เวลาสิ้นสุด : <%= data[i].TimeStop %>
+            จำนวนคน : <%= data[i].Participant %>
+            <br>
+        <% } %>
+    </center>
 
 </body>
 </html>

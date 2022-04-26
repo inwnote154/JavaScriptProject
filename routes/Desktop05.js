@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', [
+  check("UName","").not().isEmpty(),
   check("Dormitory","").not().isEmpty(),
   check("Room","").not().isEmpty(),
   check("Appointment_request","").not().isEmpty(),
@@ -21,19 +22,31 @@ router.post('/', [
     res.render('Desktop05');
   }
   else{
-    var ct=db.get('Blogs1');
+    var ct=db.get('Time_data');
     ct.find({$and:[{Dormitory:req.body.Dormitory}, {Room:req.body.Room},
       {Appointment_request:req.body.Appointment_request}]}).then((doc1) => {
      if(doc1.length == 0 ){
        ct.insert({
-         Dormitory:req.body.Dormitory,
-         Room:req.body.Room,
-         Appointment_request:req.body.Appointment_request,
-         TimeStart:req.body.TimeStart,
-         TimeStop:req.body.TimeStop,
-         Participant:req.body.Participant
+        UName:req.body.UName,
+        Dormitory:req.body.Dormitory,
+        Room:req.body.Room,
+        Appointment_request:req.body.Appointment_request,
+        TimeStart:req.body.TimeStart,
+        TimeStop:req.body.TimeStop,
+        Participant:req.body.Participant
        })
-       res.render('Desktop06');
+       ct.find({}, {projection: {
+        _id: 0,
+        UName: 1,
+        Dormitory: 1,
+        Room: 1,
+        Appointment_request: 1,
+        TimeStart: 1,
+        TimeStop: 1,
+        Participant: 1
+      }}).then(result => {
+        res.render('Desktop06',{data: result});
+      });
        
      } else {
        res.render('Desktop05');

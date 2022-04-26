@@ -2,106 +2,9 @@ body {
     font-family: 'Taviraj', serif;
     justify-content: center;
     background-color: #F2EFEA;
-    }
-  
-    button {
-      width: 75px;
-      cursor: pointer;
-      border: 1px solid #000000;
-      outline: none;
-      padding: 5px;
-      border-radius: 5px;
-    }
-  
-    #header {
-      padding: 10px;
-      color: #22616F;
-      font-size: 26px;
-      font-family: sans-serif;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    #header button {
-      background-color:#B0CED2;
-      
-    }
-  
-    #container {
-      background-color:#B0CED2;
-      border-left: 58px solid #B0CED2;
-      border-right: 58px solid #B0CED2;
-      border-top: 30px solid #B0CED2;
-      border-bottom: 30px solid #B0CED2;
-      width: 830px;
-      position: absolute;
-      left: 22.54vw;
-    }
-    
-    #weekdays {
-      width: 100%;
-      display: flex;
-        background: #4097AA;
-    }
-  
-    #weekdays div {
-      width: 100px;
-      padding: 10px;
-      text-align: center;
-      color: white;
-      margin:auto;
-        width:70%;
-      border: 1.3999px solid #B0CED2;
-    }
-  
-    #calendar {
-      width: 100%;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    .day {
-      width: 100px;
-      padding: 10px;
-      height: 100px;
-      cursor: pointer;
-      box-sizing: border-box;
-      background-color: #4097AA;
-      margin: 1px;
-      box-shadow: 0px 0px 3px #CBD4C2;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      color: white;
-    }
-  
-    .day:hover {
-      background-color: #e8faed;
-      
-    }
-    
-    .day + #currentDay {
-      background-color:#e8f4fa;
-    }
-  
-    .event {
-      font-size: 10px;
-      padding: 3px;
-      background-color: #58bae4;
-      color: white;
-      border-radius: 5px;
-      max-height: 55px;
-      overflow: hidden;
-    }
-    
-    .padding {
-      cursor: default !important;
-      box-shadow: none !important;
-      
-    }
-  
-    .menu{
+  }
+
+  .menu{
       position: relative;
       width: 100%;
       height: 9vh;
@@ -168,5 +71,73 @@ body {
     font-size: 25px;
   
   }
+
+/* ------------------------------------------ */
+
+  .container{
+
+  }
   
-  
+  .Topic{
+    background-color: #4097AA;
+  }
+
+  .Topic ul{
+    display: flex;
+  }
+
+  .Topic ul li{
+    
+  }
+
+  .DataofTopic{
+    padding: 0;
+    margin: 0;
+  }
+
+  .DataofTopic ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .DataofTopic ul li{
+    text-align: center;
+    padding: 2em;
+  }
+
+  .c1{
+    background-color: #B0CED2;
+  }
+
+  .c2{
+    background-color: #F2EFEA;
+  }
+
+  #b1{
+
+  }
+
+  #b2{
+
+  }
+
+  #b3{
+
+  }
+
+  #b4{
+
+  }
+
+  #b5{
+
+  }
+
+  #b6{
+
+  }
+
+  #b7{
+
+  }

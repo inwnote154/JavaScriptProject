@@ -22,30 +22,37 @@
     <br><br><br>
     <center><B><div class = "title"><span>เช็คห้องว่าง</span></div></b></center>
     <br><br>
-    <div id  = "container">
-        <div id ="header">
-            
-            <div>
-                <button id = "backButton" ><img src = "images/back.png" width="10px" height="10px"> </button>
-                <button id = "nextButton" ><img src = "images/next.png" width="10px" height="10px"> </button>
-            </div>
-            <div id ="monthDisplay"></div>
-        </div>
+    <div class="container">
 
-
-        <div id = "weekdays">
-            <div>อาทิตย์</div>
-            <div>จันทร์</div>
-            <div>อังคาร</div>
-            <div>พุทธ</div>
-            <div>พฤหัสบดี</div>
-            <div>ศุกร์</div> 
-            <div>เสาร์</div>
-        </div>
-        
-        <div id = "calendar"></div>
     </div>
-    <script src ="/javascripts/Desktop06.js"></script>
+    <div class="Topic">
+        <ul>
+            <li id="b1">ชื่อผู้จอง</li>
+            <li id="b2"></li>>หอพัก</li>
+            <li id="b3"></li>>ห้อง</li>
+            <li id="b4"></li>>วัน เดือน ปี</li>
+            <li id="b5"></li>>เวลาเริ่มต้น</li>
+            <li id="b6"></li>>เวลาสิ้นสุด</li>
+            <li id="b7"></li>>จำนวนคน</li>
+        </ul>
+    </div>
+    
+    <% if(data.length == 0){ %>
+        <center><h1>ไม่พบข้อมูล</h1>  </center>
+    <% } %>
+    <% for (var i = 0; i < data.length; i++) { %>
+        <div class="DataofTopic">
+            <ul>
+                <li class="c1" id="b1"></li>><%= data[i].UName%></li>
+                <li class="c2" id="b2"></li>><%= data[i].Dormitory %></li>
+                <li class="c1" id="b3"></li>><%= data[i].Room %></li>
+                <li class="c2" id="b4"></li>><%= data[i].Appointment_request %></li>
+                <li class="c1" id="b5"></li>><%= data[i].TimeStart %></li>
+                <li class="c2" id="b6"></li>><%= data[i].TimeStop %></li>
+                <li class="c1" id="b7"></li>><%= data[i].Participant %></li>
+            </ul>
+        </div>
+    <% } %>
 
 </body>
 </html>
