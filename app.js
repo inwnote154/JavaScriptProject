@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+require('dotenv').config();
 
 var Desktop01Router = require('./routes/Desktop01');
 var Desktop02Router = require('./routes/Desktop02');
